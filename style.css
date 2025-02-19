@@ -1,0 +1,141 @@
+*{
+margin:0;
+padding:0
+box-sizing:border-box;;
+}
+//body {background-color:brack;}
+
+//nav {  }
+header { 
+     background:#35424a;
+     color:#ffffff;
+    // padding-top:30px;
+    // min-height:70px;
+     border-bottom:#e8491d 3px solid;
+    
+}
+ul {
+list-style:none;
+    display:flex;
+    display:online;
+    gap:30px;
+    align-items:center;
+    justify-content:space-between;
+    justify-content:space-around;
+    height:50px;
+}
+/*/xbox{
+background-image:url("image/apple.jpg");
+background-origin:center;
+background-size:cover;
+}/**/
+ul a{color:#ffffff;
+  text-decoration:none;
+ // text-transform: uppercase;
+  font-size:30px;
+  }
+ul a:hover {
+  color:blue;
+}
+
+div {
+margin-left:10px;
+}
+
+footer {
+     
+    padding:20px;
+    margin-top:5px;
+    color:#ffffff;
+    background-color:#e8491dff;
+    text-align: center;
+}
+footer:hover  {color:green;}
+h1 u{
+color:red;
+}
+h1 u:hover {color:blue;}
+h3 u{
+   color:#e8491dff;
+}
+body {
+      font: 15px/1.5 Arial, Helvetica,sans-serif;
+      padding:0;
+      margin:0;
+      background-color:#f4f4f4;
+    }
+
+    .div{
+      background-color: #ff0000;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    img{
+    image-orientation:;
+    }
+    //search part
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+     // margin: 20px;
+    }
+
+    .search-container input {
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 25px 0 0 25px;
+      outline: none;
+    }
+
+    .search-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 25px 25px 0;
+    }
+
+    .search-container button:hover {
+      background-color: #cc0000;
+    }
+
+    .results {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .result-item {
+      display: flex;
+      margin-bottom: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .result-item img {
+      width: 120px;
+      height: 80px;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+
+    .result-item .info {
+      flex: 1;
+    }
+
+    .result-item .info h4 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .result-item .info p {
+      margin: 0;
+      color: #555;
+    }
