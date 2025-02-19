@@ -1,0 +1,137 @@
+<!octype>
+<html>
+<head>
+<title>UMURYANGO</title>
+   <link rel="stylesheet" href="style.css">
+   <style type="text/css">
+   main {
+   background-color:aqua;
+   background-position:center;
+   background-size:cover;
+   margin-left:10px;
+   margin-right:10px;
+   margin-top:5px;
+   margin-bottom:5px;
+   border:#e8491d 3px solid;
+   }
+   section {background-color:aqua;
+         margin-left:10px;
+         margin-right:10px;
+         margin-top:5px;
+   }
+   </style>
+</head>
+<body>
+<header>
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search here...">
+    <button onclick="performSearch()">Search</button>
+  </div>
+
+  <div class="results" id="resultsContainer"></div>
+
+<nav>
+<ul>
+<li><h1><a href="xbox.html" >HOME</a></h1></li>
+<li><h1><a href="about.html" >ABOUT</a></h1></li></ul>
+</nav>
+<h1><u><center>IHURIRO<br> RY'UMURYANGO</center></u></h1>
+</header>
+<main >
+<div>
+<h3><u>UMURYANGO WA:</u><br>
+<center>CIZANYE Matotino na AHISHAKIYE Angel</h3>
+<img src="image/css.jpg" alt="fils"
+height="70px"width="70px">:CIZANYE Matotino
+<br><img src="image/kgl.png" alt="my image"
+height="70px"width="70px">AHISHAKIYE Angel
+<br><img src="image/L.jpg"height="70px"width="70px">Oscar
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">:NIBITANGA Salvator
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px"><h3><u>UMURYANGO WA:</u></h3>
+<br><img src="image/L.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/ogo.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+<h3><u>UMURYANGO WA:</u><br><center>
+NIBITANGA Salvator na ZIRAHANAGUYE Juliett</h3>
+<br><img src="image/papa.jpg" alt="fils"
+height="80px"width="40px">:NIBITANGA Salvator
+<br><img src="image/css.jpg" alt="fils"
+height="80px"width="40px">:ZIRAHANAGUYE Juliett
+<br><img src="image/jewe.jpg" alt="fils"
+height="80px"width="30px">:NIBITANGA Aime Tresor
+<br><img src="image/freri.jpg" alt="fils"
+height="80px"width="40px">:NIBITANGA Cado fleuri
+<br><img src="image/donk.jpg" alt="fils"
+height="80px"width="40px">:NIBITANGA Donchrettie
+<br><img src="image/janti.jpg" alt="fils"
+height="80px"width="35px">:NIBITANGA Alle Jante
+<h3><u>UMURYANGO WA:</u></h3>
+<br><img src="image/.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/apple.jpg" alt="fils"
+height="70px"width="70px">
+<br><img src="image/css.jpg" alt="fils"
+height="70px"width="70px">
+</div>
+</main>
+<section> sushdudududududdidididjddi
+djfjdidjdjfjfjfififfifififififidfjdj
+sndjckcjcjxjcjdjaiqieueuriwuwuwudidudj
+cjxn
+djdiwiehdidnsjwidndididjdidiejwuqyqh </section>
+<footer>Fils design &copy 2025</footer>
+<script>
+    // Simulated video data
+    const sampleData = [
+    "Home",
+    "About Us",
+    "Contact",
+    "Services",
+    "Portfolio",
+    "Blog",
+    "FAQ",
+    ];
+    
+    function performSearch() {
+    const query = document.getElementById("searchInput").value.toLowerCase();
+    const resultsList = document.getElementById("resultsList");
+    resultsList.innerHTML = "";
+    
+    if (query) {
+    const results = sampleData.filter(item => item.toLowerCase().includes(query));
+    
+    if (results.length > 0) {
+    results.forEach(result => {
+    const li = document.createElement("li");
+    li.textContent = result;
+    resultsList.appendChild(li);
+    });
+    } else {
+    resultsList.innerHTML = "<li>No results found</li>";
+    }
+    }
+    }
+  </script>
+</body>
+</html>
