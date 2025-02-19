@@ -1,0 +1,118 @@
+<!octype>
+<html>
+<head>
+<title>UMURYANGO</title>
+   <link rel="stylesheet" href="style.css">
+   <style type="text/css">
+   main {background-color:#35424a;
+   margin-left:10px;
+   margin-right:10px;
+   margin-top:5px;;
+   border:#e8491d 3px solid;
+   }
+   p{color:#ffffff;
+   margin-left:20px;
+   margin-right:20px;
+   margin-top:30px;;
+    }
+   article main{
+   float:left;
+   width:65%;
+   }
+   
+   </style>
+</head>
+<body>
+<header>
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search here...">
+    <button onclick="performSearch()">Search</button>
+  </div>
+
+  <div class="results" id="resultsContainer"></div>
+
+<nav>
+<ul>
+<li><h1><a href="xbox.html" >HOME</a></h1></li>
+<li><h1><a href="about.html" >ABOUT</a></h1></li></ul>
+</nav>
+<h1><u><center>IHURIRO<br> RY'UMURYANGO</center></u></h1>
+</header>
+<main>
+<article>
+<h1><center style="color:#ffffff;" >IBIYIGIZE</center></h1><p>iri n'ihuriro ryumuryango kugirango ntitwibagirane
+haba abari hanze yigihugu canke abantu baba mugihugu hagati tubashe kumenyana
+ibi bifasha cyane cyane abana bakiri bato bagakura bazinanye</p><br>
+<p>iki n'igitekerezo cumwana wumuhungu yitwa "<u>fils</u>" afatanije 
+nasewabo "<u>Nijimbere</u>" aba bantu bari baba mubihugu bitandukanye.
+uwo mwana wumuhungu yababazwa n'uko yakuriye mumahanga. bigatumayifuza gukora
+ikintu catuma umuryango umenyana. hanyuma aza gusanga sewabo nawe afise ico ciyunviro bica bimutera
+gukora ururubuga.</p><br>
+<p>uru rubuga rwakozwe kugirango ruhuze umuryango.
+rwubatswe kuva kumuryango wabasogokuru. kanda kuri
+HOME kugirango urabe uko bagiye bava mugisekuru kimwe
+baja mukindi</p>
+</article>
+
+<section></section>
+</main>
+<footer>Fils design &copy 2025</footer>
+<script>
+    // Simulated video data
+    const videoData = [
+      {
+        title: "How to Code in JavaScript",
+        description: "Learn JavaScript with this beginner-friendly tutorial.",
+        thumbnail: "https://via.placeholder.com/120x80?text=JS+Tutorial",
+      },
+      {
+        title: "CSS Tricks for Responsive Design",
+        description: "Master responsive web design with these CSS tips.",
+        thumbnail: "https://via.placeholder.com/120x80?text=CSS+Design",
+      },
+      {
+        title: "HTML Basics for Beginners",
+        description: "A step-by-step guide to understanding HTML.",
+        thumbnail: "https://via.placeholder.com/120x80?text=HTML+Basics",
+      },
+      {
+        title: "Python Programming Crash Course",
+        description: "Dive into Python programming in just 1 hour!",
+        thumbnail: "https://via.placeholder.com/120x80?text=Python+Course",
+      },
+    ];
+
+    function performSearch() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("resultsContainer");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        const results = videoData.filter(video =>
+          video.title.toLowerCase().includes(query) ||
+          video.description.toLowerCase().includes(query)
+        );
+
+        if (results.length > 0) {
+          results.forEach(video => {
+            const resultItem = document.createElement("div");
+            resultItem.classList.add("result-item");
+
+            resultItem.innerHTML = `
+              <img src="${video.thumbnail}" alt="Thumbnail">
+              <div class="info">
+                <h4>${video.title}</h4>
+                <p>${video.description}</p>
+              </div>
+            `;
+
+            resultsContainer.appendChild(resultItem);
+          });
+        } else {
+          resultsContainer.innerHTML = "<p>No results found.</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
